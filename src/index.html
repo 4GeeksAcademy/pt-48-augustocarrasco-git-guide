@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Small Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    
+    <div class="flex w-screen h-full bg-gradient-to-tr from-sky-900 via-teal-500 to-emerald-600 justify-center items-center text-gray-300 p-6">
+        <nav class="w-screen h-fit flex flex-row justify-center bg-gray-500 fixed top-0">
+            <div class="w-2/4 flex flex-row justify-around">
+                <a href="#intro">Introduction</a>
+                <a href="#diff">Git Diff</a>
+                <a href="#checkout">Git Checkout</a>
+            </div>
+        </nav>
+        <div class="flex flex-col bg-gray-500/25 h-3/4 w-2/4 justify-start items-center rounded-3xl mt-4">
+            <h1 class="p-4 text-gray-300 font-semibold text-xl">Short git diff & git checkout Guide</h1>
+            <hr class="w-5/6 h-1"   id="intro">
+            <div class="flex flex-col items-center p-5 w-3/4">
+                <h2 class="text-lg">Introduction</h2>
+                <video controls width="100%" src="/src/media/intro.mp4"></video>
+                <p>Introducing a local git repository with 5 commits. Use of <i>git log</i> to check the commits history and get the hash number of each commit.</p>
+            </div>
+            <hr class="w-5/6 h-1"   id="diff">
+            <div class="flex flex-col items-center p-5 w-3/4">
+                <h2 class="text-lg">Getting the differences between commits</h2>
+                <video controls width="100%" src="/src/media/diff.mp4"></video>
+                <p class="self-start">Use of <i>git diff</i> to check the difference between commits.</p>
+                <p>Syntax as follows: <i>git diff</i> <<strong>hash</strong> of the first commit to compare><<strong>hash</strong> of the second commit to compare</p>
+                <p>Example: <strong>git diff 23eb1 dc720</strong></p>
+            </div>
+            <hr class="w-5/6 h-1"  id="checkout">
+            <div class="flex flex-col items-center p-5 w-3/4">
+                <h2 class="text-lg">Switching between commits</h2>
+                <video controls width="100%" src="/src/media/checkout.mp4"></video>
+                <p>Syntax as follows: <i>git checkout</i> <<strong>hash</strong> of the destination commit></p>
+                <p>Example: <strong>git diff dc720</strong></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
